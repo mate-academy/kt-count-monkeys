@@ -1,7 +1,3 @@
 package mate.academy
 
-// Implement the `countTheMonkeys()` function so that it returns an IntArray
-// with elements from `1` to `count`.
-fun countTheMonkeys(count: Int): IntArray {
-
-}
+fun countTheMonkeys(count: Int) = if (count < 1) IntArray(0) else IntArray(count) {it + 1}
