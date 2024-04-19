@@ -4,7 +4,7 @@ package mate.academy
 // with elements from `1` to `count`.
 fun countTheMonkeys(count: Int): IntArray {
     val array = IntArray(count)
-    var index = 0;
+    var index = 0
     if (count == 0) return array
     for(i in 1 .. count) {
         array[index] = i
