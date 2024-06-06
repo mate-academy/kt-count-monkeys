@@ -7,6 +7,9 @@ const val INDEX_MINUS = 1
 
 fun countTheMonkeys(count: Int): IntArray {
     val arrayMonkeys = IntArray(count)
+    if (count == 0) {
+        return intArrayOf()
+    }
     for (i in START_LOOP..count) {
         arrayMonkeys[i - INDEX_MINUS] = i
     }
