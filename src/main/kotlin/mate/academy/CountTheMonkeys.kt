@@ -1,7 +1,12 @@
 package mate.academy
 
-// Implement the `countTheMonkeys()` function so that it returns an IntArray
-// with elements from `1` to `count`.
+const val INDEX : Int = 1
+const val ZERO : Int = 0
 fun countTheMonkeys(count: Int): IntArray {
-
+    val counts = IntArray(count)
+    var j = ZERO
+    for (i in INDEX..count) {
+        counts[j++] = i
+    }
+    return counts
 }
