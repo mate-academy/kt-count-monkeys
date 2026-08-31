@@ -1,7 +1,9 @@
 package mate.academy
 
-// Implement the `countTheMonkeys()` function so that it returns an IntArray
-// with elements from `1` to `count`.
 fun countTheMonkeys(count: Int): IntArray {
-
+    val list = mutableListOf<Int>()
+    for (c in 1..count) {
+        list.add(c)
+    }
+    return list.toIntArray()
 }
